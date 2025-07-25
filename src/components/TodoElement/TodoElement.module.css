@@ -1,0 +1,68 @@
+.todoEl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    gap: 8px;
+}
+
+.todoEl:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.textBlock {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 0.4fr 0.2fr;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.editBtn {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    grid-column: 4;
+}
+
+.approveBtn,
+.editBtn {
+    width: fit-content;
+    justify-self: end;
+}
+
+.textBlock.textInvisible {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.editBlock {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.editBlock.editVisible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.removeBtn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.category-work {
+  border-left: 5px solid var(--colorLightBlue);
+}
+
+.category-study {
+  border-left: 5px solid var(--colorYellow);
+}
+
+.category-home {
+  border-left: 5px solid var(--colorGreen);
+}

@@ -1,0 +1,13 @@
+.panel {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.addBtn {
+    width: fit-content;
+}
+
+.addBtn[disabled] {
+    cursor: not-allowed;
+}

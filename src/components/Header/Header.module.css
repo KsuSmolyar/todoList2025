@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    padding: 20px 32px;
+    border-bottom: 2px solid var(--colorBlack);
+    margin-bottom: 24px;
+}

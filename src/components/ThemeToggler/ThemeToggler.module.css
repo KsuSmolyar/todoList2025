@@ -1,0 +1,83 @@
+.themeToggler {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 64px;
+}
+
+.input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f6e47cfc;
+    z-index: 1;
+}
+
+.slider:before,
+.slider:after {
+    content: "🔅";
+    position: absolute;
+    text-align: center;
+    bottom: 4px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--colorWhite4);
+    border-radius: 50%;
+}
+
+.slider:before {
+    transition: 0.4s;
+}
+
+.slider:after {
+    transition: 0.5s;
+}
+
+.slider,
+.wave {
+    top: 0;
+    left: 0;
+    border-radius: 5rem;
+    transition: all 1.4s;
+}
+
+.wave {
+    position: absolute;
+    opacity: 0.4;
+    width: 64px;
+    height: 32px;
+}
+
+.wave:after {
+    content: "☆.。.";
+    top: 4px;
+    left: 15%;
+}
+
+.wave:before {
+    content: ".。.";
+    top: 6.8px;
+    left: 13%;
+}
+
+input:checked ~ .wave {
+    display: block;
+    background-color: #114d74;
+}
+
+input:checked ~ .slider {
+    background-color: transparent;
+}
+
+input:checked ~ .slider:before,
+input:checked ~ .slider:after {
+    content: "🌙";
+    transform: translateX(30px);
+}

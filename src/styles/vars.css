@@ -1,0 +1,9 @@
+:root[data-theme="dark"] {
+    --baseBackgroundColor: #242424;
+    --baseColor: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="light"] {
+    --baseBackgroundColor: #ccc;
+    --baseColor: #000;
+}

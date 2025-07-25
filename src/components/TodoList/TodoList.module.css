@@ -1,0 +1,19 @@
+.dropdownContainer {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.dropped > li {
+    cursor: grab;
+}
+
+.todoItem.dragging {
+    background: var(--colorGray);
+    border: 1px dashed var(--colorLightBlue);
+}
+
+.todoList {
+    list-style: none;
+    padding: 0;
+}

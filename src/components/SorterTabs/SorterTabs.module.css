@@ -1,0 +1,9 @@
+.sorter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.sorterBtn.focused {
+    outline: 4px auto -webkit-focus-ring-color;
+}

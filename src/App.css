@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 32px;
+}
